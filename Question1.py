@@ -12,28 +12,31 @@
 # Output: 9
 
 
-import array
-Input=array.array('i',[])
+import array #importing array class
+Input=array.array('i',[])# creating one dimenstional  empty array
 n=int(input("Enter How many number you want:"))
-for i in range(n):
-    Input.append(int(input("Enter a Number:")))
+for i in range(n): #Iterating for number of array want
+    Input.append(int(input("Enter a Number greater than Zero:"))) #appending the array in empty by user wanted
 
 print(Input)
 sum=0
 sum2=0
-for j in Input:
-    if j%2==0:
-        sum=sum+1
+for j in Input: 
+    if j%2==0: #selecting even number in array
+        sum=sum+1 # Adding 1 point for every even number in the array
+
 
 
 for k in Input:
-    if (k % 2 != 0) and (k != 5):
-        sum=sum+3
+    if (k % 2 != 0) and (k != 5):#selecting odd number in array,except 5
+       sum=sum+3 # Adding 3 points for every odd number in the array, expect for the number "5"
+
 
 
 for j in Input:
-    if j==5:
-        sum=sum+5
+    if j==5: #selecting only number that is five
+        sum=sum+5 # Add 5 points every time the number "5" appears in the array
+
 print(sum)
 
 
