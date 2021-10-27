@@ -8,11 +8,11 @@ list = ["Pratik Thapa", "Hari Kumar Karki", "Shyam Govind Sharma", "Wilson Karki
 n=(len(list))
 name=[]
 for i in range(n):
-    name.append(list[i].split())
+    name.append(list[i].split()) #spliting string from the list
 
 list=[]
-for j in sorted(name, key=lambda x: x[-1]):
-    list.append(' '.join(j))
+for j in sorted(name, key=lambda x: x[-1]):#selecting last_name by [-1] which indictes last element and sorting it in alphabetical order
+    list.append(' '.join(j)) #Joing last string with  remaing  same index  string
 print(list)
 
 
